@@ -83,6 +83,7 @@
     <Build Include="XMLSchemaCollection\Person.AdditionalContactInfoSchemaCollection.sql" />
     <Build Include="XMLSchemaCollection\IndividualSurveySchemaCollection.sql" />
     <Build Include="UserDefinedType\Flag.sql" />
+    <Build Include="Tables\BusinessEntity.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\roles.sql" />
