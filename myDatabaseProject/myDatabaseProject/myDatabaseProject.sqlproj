@@ -57,5 +57,34 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Function" />
+    <Folder Include="Schemas" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Views" />
+    <Folder Include="UserDefinedType" />
+    <Folder Include="XMLSchemaCollection" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Department.sql" />
+    <Build Include="Tables\Employee.sql" />
+    <Build Include="Function\BreakStringIntoRows.sql" />
+    <Build Include="Schemas\HumanResources.sql" />
+    <Build Include="Schemas\Person.sql" />
+    <Build Include="Schemas\Production.sql" />
+    <Build Include="Schemas\Purchasing.sql" />
+    <Build Include="Schemas\Sales.sql" />
+    <Build Include="StoredProcedures\uspGetEmployeeDepartmentManagers.sql" />
+    <Build Include="StoredProcedures\uspGetEmployeeManagers.sql" />
+    <Build Include="Views\vEmployee.sql" />
+    <Build Include="Tables\Person.sql" />
+    <Build Include="UserDefinedType\NameStyle.sql" />
+    <Build Include="UserDefinedType\Name.sql" />
+    <Build Include="XMLSchemaCollection\Person.AdditionalContactInfoSchemaCollection.sql" />
+    <Build Include="XMLSchemaCollection\IndividualSurveySchemaCollection.sql" />
+    <Build Include="UserDefinedType\Flag.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\roles.sql" />
   </ItemGroup>
 </Project>
